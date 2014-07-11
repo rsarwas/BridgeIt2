@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		590423D4196F841800D7DB9F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590423D3196F841800D7DB9F /* main.swift */; };
+		590423D6196F841800D7DB9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590423D5196F841800D7DB9F /* AppDelegate.swift */; };
+		590423D8196F841800D7DB9F /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590423D7196F841800D7DB9F /* GameView.swift */; };
+		590423DA196F841800D7DB9F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590423D9196F841800D7DB9F /* GameViewController.swift */; };
+		590423DC196F841800D7DB9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590423DB196F841800D7DB9F /* Images.xcassets */; };
+		590423DF196F841800D7DB9F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 590423DD196F841800D7DB9F /* MainMenu.xib */; };
+		590423EB196F841800D7DB9F /* BridgeItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590423EA196F841800D7DB9F /* BridgeItTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		590423E5196F841800D7DB9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 590423C6196F841800D7DB9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 590423CD196F841800D7DB9F;
+			remoteInfo = BridgeIt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		590423CE196F841800D7DB9F /* BridgeIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BridgeIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		590423D2196F841800D7DB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		590423D3196F841800D7DB9F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		590423D5196F841800D7DB9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		590423D7196F841800D7DB9F /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		590423D9196F841800D7DB9F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		590423DB196F841800D7DB9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		590423DE196F841800D7DB9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		590423E4196F841800D7DB9F /* BridgeItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		590423E9196F841800D7DB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		590423EA196F841800D7DB9F /* BridgeItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeItTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		590423CB196F841800D7DB9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		590423E1196F841800D7DB9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		590423C5196F841800D7DB9F = {
+			isa = PBXGroup;
+			children = (
+				590423D0196F841800D7DB9F /* BridgeIt */,
+				590423E7196F841800D7DB9F /* BridgeItTests */,
+				590423CF196F841800D7DB9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		590423CF196F841800D7DB9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				590423CE196F841800D7DB9F /* BridgeIt.app */,
+				590423E4196F841800D7DB9F /* BridgeItTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		590423D0196F841800D7DB9F /* BridgeIt */ = {
+			isa = PBXGroup;
+			children = (
+				590423D5196F841800D7DB9F /* AppDelegate.swift */,
+				590423D7196F841800D7DB9F /* GameView.swift */,
+				590423D9196F841800D7DB9F /* GameViewController.swift */,
+				590423DB196F841800D7DB9F /* Images.xcassets */,
+				590423DD196F841800D7DB9F /* MainMenu.xib */,
+				590423D1196F841800D7DB9F /* Supporting Files */,
+			);
+			path = BridgeIt;
+			sourceTree = "<group>";
+		};
+		590423D1196F841800D7DB9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				590423D2196F841800D7DB9F /* Info.plist */,
+				590423D3196F841800D7DB9F /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		590423E7196F841800D7DB9F /* BridgeItTests */ = {
+			isa = PBXGroup;
+			children = (
+				590423EA196F841800D7DB9F /* BridgeItTests.swift */,
+				590423E8196F841800D7DB9F /* Supporting Files */,
+			);
+			path = BridgeItTests;
+			sourceTree = "<group>";
+		};
+		590423E8196F841800D7DB9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				590423E9196F841800D7DB9F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		590423CD196F841800D7DB9F /* BridgeIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 590423EE196F841800D7DB9F /* Build configuration list for PBXNativeTarget "BridgeIt" */;
+			buildPhases = (
+				590423CA196F841800D7DB9F /* Sources */,
+				590423CB196F841800D7DB9F /* Frameworks */,
+				590423CC196F841800D7DB9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BridgeIt;
+			productName = BridgeIt;
+			productReference = 590423CE196F841800D7DB9F /* BridgeIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		590423E3196F841800D7DB9F /* BridgeItTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 590423F1196F841800D7DB9F /* Build configuration list for PBXNativeTarget "BridgeItTests" */;
+			buildPhases = (
+				590423E0196F841800D7DB9F /* Sources */,
+				590423E1196F841800D7DB9F /* Frameworks */,
+				590423E2196F841800D7DB9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				590423E6196F841800D7DB9F /* PBXTargetDependency */,
+			);
+			name = BridgeItTests;
+			productName = BridgeItTests;
+			productReference = 590423E4196F841800D7DB9F /* BridgeItTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		590423C6196F841800D7DB9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Regan Sarwas";
+				TargetAttributes = {
+					590423CD196F841800D7DB9F = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					590423E3196F841800D7DB9F = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 590423CD196F841800D7DB9F;
+					};
+				};
+			};
+			buildConfigurationList = 590423C9196F841800D7DB9F /* Build configuration list for PBXProject "BridgeIt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 590423C5196F841800D7DB9F;
+			productRefGroup = 590423CF196F841800D7DB9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				590423CD196F841800D7DB9F /* BridgeIt */,
+				590423E3196F841800D7DB9F /* BridgeItTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		590423CC196F841800D7DB9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590423DC196F841800D7DB9F /* Images.xcassets in Resources */,
+				590423DF196F841800D7DB9F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		590423E2196F841800D7DB9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		590423CA196F841800D7DB9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590423DA196F841800D7DB9F /* GameViewController.swift in Sources */,
+				590423D6196F841800D7DB9F /* AppDelegate.swift in Sources */,
+				590423D8196F841800D7DB9F /* GameView.swift in Sources */,
+				590423D4196F841800D7DB9F /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		590423E0196F841800D7DB9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590423EB196F841800D7DB9F /* BridgeItTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		590423E6196F841800D7DB9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 590423CD196F841800D7DB9F /* BridgeIt */;
+			targetProxy = 590423E5196F841800D7DB9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		590423DD196F841800D7DB9F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				590423DE196F841800D7DB9F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		590423EC196F841800D7DB9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		590423ED196F841800D7DB9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		590423EF196F841800D7DB9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BridgeIt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		590423F0196F841800D7DB9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BridgeIt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		590423F2196F841800D7DB9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BridgeIt.app/Contents/MacOS/BridgeIt";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BridgeItTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		590423F3196F841800D7DB9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BridgeIt.app/Contents/MacOS/BridgeIt";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BridgeItTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		590423C9196F841800D7DB9F /* Build configuration list for PBXProject "BridgeIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				590423EC196F841800D7DB9F /* Debug */,
+				590423ED196F841800D7DB9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		590423EE196F841800D7DB9F /* Build configuration list for PBXNativeTarget "BridgeIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				590423EF196F841800D7DB9F /* Debug */,
+				590423F0196F841800D7DB9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		590423F1196F841800D7DB9F /* Build configuration list for PBXNativeTarget "BridgeItTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				590423F2196F841800D7DB9F /* Debug */,
+				590423F3196F841800D7DB9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 590423C6196F841800D7DB9F /* Project object */;
+}

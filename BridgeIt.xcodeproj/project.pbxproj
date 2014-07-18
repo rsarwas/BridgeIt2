@@ -14,6 +14,15 @@
 		590423DC196F841800D7DB9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590423DB196F841800D7DB9F /* Images.xcassets */; };
 		590423DF196F841800D7DB9F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 590423DD196F841800D7DB9F /* MainMenu.xib */; };
 		590423EB196F841800D7DB9F /* BridgeItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590423EA196F841800D7DB9F /* BridgeItTests.swift */; };
+		590423F7196F861800D7DB9F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590423F6196F861800D7DB9F /* Card.swift */; };
+		5918544D1970FF870064CEA4 /* Bid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5918544C1970FF870064CEA4 /* Bid.swift */; };
+		5918544F1974EEAB0064CEA4 /* Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5918544E1974EEAB0064CEA4 /* Seat.swift */; };
+		591854511974EEC90064CEA4 /* Side.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591854501974EEC90064CEA4 /* Side.swift */; };
+		591854531974EEE00064CEA4 /* Trick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591854521974EEE00064CEA4 /* Trick.swift */; };
+		591854551974EEF20064CEA4 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591854541974EEF20064CEA4 /* Call.swift */; };
+		591854571974EF4E0064CEA4 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591854561974EF4E0064CEA4 /* Hand.swift */; };
+		591854591974F22D0064CEA4 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591854581974F22D0064CEA4 /* Contract.swift */; };
+		59F66D0919778EB400F97E05 /* TableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F66D0819778EB400F97E05 /* TableState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +47,16 @@
 		590423E4196F841800D7DB9F /* BridgeItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		590423E9196F841800D7DB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		590423EA196F841800D7DB9F /* BridgeItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeItTests.swift; sourceTree = "<group>"; };
+		590423F4196F844E00D7DB9F /* BridgeIt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BridgeIt.entitlements; sourceTree = "<group>"; };
+		590423F6196F861800D7DB9F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
+		5918544C1970FF870064CEA4 /* Bid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bid.swift; path = Model/Bid.swift; sourceTree = "<group>"; };
+		5918544E1974EEAB0064CEA4 /* Seat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Seat.swift; path = Model/Seat.swift; sourceTree = "<group>"; };
+		591854501974EEC90064CEA4 /* Side.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Side.swift; path = Model/Side.swift; sourceTree = "<group>"; };
+		591854521974EEE00064CEA4 /* Trick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trick.swift; path = Model/Trick.swift; sourceTree = "<group>"; };
+		591854541974EEF20064CEA4 /* Call.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Call.swift; path = Model/Call.swift; sourceTree = "<group>"; };
+		591854561974EF4E0064CEA4 /* Hand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hand.swift; path = Model/Hand.swift; sourceTree = "<group>"; };
+		591854581974F22D0064CEA4 /* Contract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contract.swift; path = Model/Contract.swift; sourceTree = "<group>"; };
+		59F66D0819778EB400F97E05 /* TableState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableState.swift; path = Model/TableState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +98,8 @@
 		590423D0196F841800D7DB9F /* BridgeIt */ = {
 			isa = PBXGroup;
 			children = (
+				590423F5196F85D000D7DB9F /* Model */,
+				590423F4196F844E00D7DB9F /* BridgeIt.entitlements */,
 				590423D5196F841800D7DB9F /* AppDelegate.swift */,
 				590423D7196F841800D7DB9F /* GameView.swift */,
 				590423D9196F841800D7DB9F /* GameViewController.swift */,
@@ -113,6 +134,22 @@
 				590423E9196F841800D7DB9F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		590423F5196F85D000D7DB9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				590423F6196F861800D7DB9F /* Card.swift */,
+				5918544C1970FF870064CEA4 /* Bid.swift */,
+				5918544E1974EEAB0064CEA4 /* Seat.swift */,
+				591854501974EEC90064CEA4 /* Side.swift */,
+				591854521974EEE00064CEA4 /* Trick.swift */,
+				591854541974EEF20064CEA4 /* Call.swift */,
+				591854561974EF4E0064CEA4 /* Hand.swift */,
+				591854581974F22D0064CEA4 /* Contract.swift */,
+				59F66D0819778EB400F97E05 /* TableState.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +201,11 @@
 				TargetAttributes = {
 					590423CD196F841800D7DB9F = {
 						CreatedOnToolsVersion = 6.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					590423E3196F841800D7DB9F = {
 						CreatedOnToolsVersion = 6.0;
@@ -215,8 +257,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				590423DA196F841800D7DB9F /* GameViewController.swift in Sources */,
+				5918544D1970FF870064CEA4 /* Bid.swift in Sources */,
+				591854511974EEC90064CEA4 /* Side.swift in Sources */,
+				591854591974F22D0064CEA4 /* Contract.swift in Sources */,
+				591854571974EF4E0064CEA4 /* Hand.swift in Sources */,
+				59F66D0919778EB400F97E05 /* TableState.swift in Sources */,
+				5918544F1974EEAB0064CEA4 /* Seat.swift in Sources */,
 				590423D6196F841800D7DB9F /* AppDelegate.swift in Sources */,
+				590423F7196F861800D7DB9F /* Card.swift in Sources */,
 				590423D8196F841800D7DB9F /* GameView.swift in Sources */,
+				591854551974EEF20064CEA4 /* Call.swift in Sources */,
+				591854531974EEE00064CEA4 /* Trick.swift in Sources */,
 				590423D4196F841800D7DB9F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,17 +306,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -279,15 +344,32 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -297,17 +379,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -316,14 +412,31 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				METAL_ENABLE_DEBUG_INFO = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -335,6 +448,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = BridgeIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -346,6 +460,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = BridgeIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -407,6 +522,7 @@
 				590423F0196F841800D7DB9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		590423F1196F841800D7DB9F /* Build configuration list for PBXNativeTarget "BridgeItTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +531,7 @@
 				590423F3196F841800D7DB9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

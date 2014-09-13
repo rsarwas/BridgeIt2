@@ -23,6 +23,8 @@
 		591854571974EF4E0064CEA4 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591854561974EF4E0064CEA4 /* Hand.swift */; };
 		591854591974F22D0064CEA4 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591854581974F22D0064CEA4 /* Contract.swift */; };
 		59F66D0919778EB400F97E05 /* TableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F66D0819778EB400F97E05 /* TableState.swift */; };
+		59F66D0B1978E85200F97E05 /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F66D0A1978E85200F97E05 /* Rank.swift */; };
+		59F66D0D1978E86300F97E05 /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F66D0C1978E86300F97E05 /* Suit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		591854561974EF4E0064CEA4 /* Hand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hand.swift; path = Model/Hand.swift; sourceTree = "<group>"; };
 		591854581974F22D0064CEA4 /* Contract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contract.swift; path = Model/Contract.swift; sourceTree = "<group>"; };
 		59F66D0819778EB400F97E05 /* TableState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableState.swift; path = Model/TableState.swift; sourceTree = "<group>"; };
+		59F66D0A1978E85200F97E05 /* Rank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rank.swift; path = Model/Rank.swift; sourceTree = "<group>"; };
+		59F66D0C1978E86300F97E05 /* Suit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Suit.swift; path = Model/Suit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 				591854561974EF4E0064CEA4 /* Hand.swift */,
 				591854581974F22D0064CEA4 /* Contract.swift */,
 				59F66D0819778EB400F97E05 /* TableState.swift */,
+				59F66D0A1978E85200F97E05 /* Rank.swift */,
+				59F66D0C1978E86300F97E05 /* Suit.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -257,10 +263,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				590423DA196F841800D7DB9F /* GameViewController.swift in Sources */,
+				59F66D0D1978E86300F97E05 /* Suit.swift in Sources */,
 				5918544D1970FF870064CEA4 /* Bid.swift in Sources */,
 				591854511974EEC90064CEA4 /* Side.swift in Sources */,
 				591854591974F22D0064CEA4 /* Contract.swift in Sources */,
 				591854571974EF4E0064CEA4 /* Hand.swift in Sources */,
+				59F66D0B1978E85200F97E05 /* Rank.swift in Sources */,
 				59F66D0919778EB400F97E05 /* TableState.swift in Sources */,
 				5918544F1974EEAB0064CEA4 /* Seat.swift in Sources */,
 				590423D6196F841800D7DB9F /* AppDelegate.swift in Sources */,

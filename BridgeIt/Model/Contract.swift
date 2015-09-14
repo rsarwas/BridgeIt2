@@ -29,11 +29,11 @@ struct Contract: Equatable, Comparable, Printable {
     }
 }
 
-@infix func == (left:Contract, right:Contract) -> Bool {
+func == (left:Contract, right:Contract) -> Bool {
     return (left.doubles == right.doubles)  && (left.bid == right.bid)
 }
 
-@infix func < (left:Contract, right:Contract) -> Bool {
+func < (left:Contract, right:Contract) -> Bool {
     if left.bid == right.bid {
         return left.doubles < right.doubles;
     } else {

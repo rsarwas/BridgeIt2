@@ -24,11 +24,11 @@ struct Bid: Equatable, Comparable, Printable {
     }
 }
 
-@infix func == (left:Bid, right:Bid) -> Bool {
+func == (left:Bid, right:Bid) -> Bool {
     return (left.tricks == right.tricks)  && (left.suit == right.suit)
 }
 
-@infix func < (left:Bid, right:Bid) -> Bool {
+func < (left:Bid, right:Bid) -> Bool {
     if left.tricks == right.tricks {
         return left.suit < right.suit;
     } else {
@@ -39,9 +39,9 @@ struct Bid: Equatable, Comparable, Printable {
 
 extension String {
     var bidValue: Bid? {
-        if let tricks = self.substringToIndex(1).toInt() {
-            if 1 < tricks && tricks <= 7 {
-                if let suit = self.substringFromIndex(1).suitValue {
+        if let tricks = String(self[self.startIndex]).toInt() {
+            if 0 < tricks && tricks <= 7 {
+                if let suit = self.substringFromIndex(self.startIndex.successor()).suitValue {
                     return Bid(tricks: tricks, suit: suit)
                 }
             }

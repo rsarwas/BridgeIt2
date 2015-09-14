@@ -21,29 +21,36 @@ enum Suit:Int, Comparable, Printable {
     
     var description: String {
         switch self {
-            case Spades:   return "\u2660";
-            case Hearts:   return "\u2665";
-            case Diamonds: return "\u2666";
-            case Clubs:    return "\u2663";
+            case Spades:   return "\u{2660}";
+            case Hearts:   return "\u{2665}";
+            case Diamonds: return "\u{2666}";
+            case Clubs:    return "\u{2663}";
             case NoTrump:  return "NT";
         }
     }
 }
 
-@infix func < (left:Suit, right:Suit) -> Bool {
-    return (left.toRaw() < right.toRaw())
+func < (left:Suit, right:Suit) -> Bool {
+    return (left.rawValue < right.rawValue)
 }
 
 extension String {
     var suitValue: Suit? {
-        switch self.lowercaseString {
-            case "c", "clubs":      return Suit.Clubs
-            case "d", "diamonds":   return Suit.Diamonds
-            case "h", "hearts":     return Suit.Hearts
-            case "s", "spades":     return Suit.Spades
-            case "nt", "no trump",
-                 "none", "notrump": return Suit.NoTrump
-            default:                return nil
+        switch self {
+            case "\u{2663}": return Suit.Clubs
+            case "\u{2666}": return Suit.Diamonds
+            case "\u{2665}": return Suit.Hearts
+            case "\u{2660}": return Suit.Spades
+            default:
+                switch self.lowercaseString {
+                    case "c", "clubs":      return Suit.Clubs
+                    case "d", "diamonds":   return Suit.Diamonds
+                    case "h", "hearts":     return Suit.Hearts
+                    case "s", "spades":     return Suit.Spades
+                    case "nt", "no trump",
+                         "none", "notrump": return Suit.NoTrump
+                    default:                return nil
+                }
         }
     }
 }

@@ -21,13 +21,13 @@ enum Rank:Int, Comparable, Printable {
             case Queen: return "Q";
             case King:  return "K";
             case Ace:   return "A";
-            default:    return "\(self.toRaw())";
+            default:    return "\(self.rawValue)";
         }
     }
 }
 
-@infix func < (left:Rank, right:Rank) -> Bool {
-    return (left.toRaw() < right.toRaw())
+func < (left:Rank, right:Rank) -> Bool {
+    return (left.rawValue < right.rawValue)
 }
 
 extension String {

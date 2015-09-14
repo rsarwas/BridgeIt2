@@ -17,20 +17,20 @@ enum Seat: Int, Equatable, Comparable, Printable {
     
     var rightHandOpponent: Seat
     {
-        var seat = self.toRaw() - 1;
+        var seat = self.rawValue - 1;
         if seat < 1 {
             seat = 4
         }
-        return Seat.fromRaw(seat)!
+        return Seat(rawValue: seat)!
     }
     
     var leftHandOpponent: Seat
     {
-    var seat = self.toRaw() + 1;
+    var seat = self.rawValue + 1;
         if 4 < seat {
             seat = 1
         }
-        return Seat.fromRaw(seat)!
+        return Seat(rawValue: seat)!
     }
     
     var nextSeat: Seat
@@ -67,7 +67,7 @@ enum Seat: Int, Equatable, Comparable, Printable {
     }
 }
 
-@infix func < (left:Seat, right:Seat) -> Bool {
-    return (left.toRaw() < right.toRaw())
+func < (left:Seat, right:Seat) -> Bool {
+    return (left.rawValue < right.rawValue)
 }
 

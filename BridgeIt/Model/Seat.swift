@@ -9,10 +9,10 @@
 import Foundation
 
 enum Seat: Int, Equatable, Comparable, CustomStringConvertible {
-    case West = 1, North, East, South
+    case west = 1, north, east, south
 
     static func All() -> [Seat] {
-        return [West, North, East, South]
+        return [west, north, east, south]
     }
     
     var rightHandOpponent: Seat
@@ -41,10 +41,10 @@ enum Seat: Int, Equatable, Comparable, CustomStringConvertible {
     var side: Side
     {
     switch self {
-    case .East, .West:
-        return Side.EastWest
-    case .North, .South:
-        return Side.NorthSouth
+    case .east, .west:
+        return Side.eastWest
+    case .north, .south:
+        return Side.northSouth
         }
     }
     
@@ -55,13 +55,13 @@ enum Seat: Int, Equatable, Comparable, CustomStringConvertible {
     
     var description: String {
         switch self {
-        case .East:
+        case .east:
             return "East"
-        case .West:
+        case .west:
             return "West"
-        case .South:
+        case .south:
             return "South"
-        case .North:
+        case .north:
             return "North"
         }
     }

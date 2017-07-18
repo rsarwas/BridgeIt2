@@ -9,23 +9,23 @@
 import Foundation
 
 enum Suit:Int, Comparable, CustomStringConvertible {
-    case Clubs = 1, Diamonds, Hearts, Spades, NoTrump
+    case clubs = 1, diamonds, hearts, spades, noTrump
     
     static func All() -> [Suit] {
-        return [Clubs, Diamonds, Hearts, Spades]
+        return [clubs, diamonds, hearts, spades]
     }
     
     static func Bids() -> [Suit] {
-        return self.All() + [.NoTrump]
+        return self.All() + [.noTrump]
     }
     
     var description: String {
         switch self {
-            case Spades:   return "\u{2660}";
-            case Hearts:   return "\u{2665}";
-            case Diamonds: return "\u{2666}";
-            case Clubs:    return "\u{2663}";
-            case NoTrump:  return "NT";
+            case .spades:   return "\u{2660}";
+            case .hearts:   return "\u{2665}";
+            case .diamonds: return "\u{2666}";
+            case .clubs:    return "\u{2663}";
+            case .noTrump:  return "NT";
         }
     }
 }
@@ -37,18 +37,18 @@ func < (left:Suit, right:Suit) -> Bool {
 extension String {
     var suitValue: Suit? {
         switch self {
-            case "\u{2663}": return Suit.Clubs
-            case "\u{2666}": return Suit.Diamonds
-            case "\u{2665}": return Suit.Hearts
-            case "\u{2660}": return Suit.Spades
+            case "\u{2663}": return Suit.clubs
+            case "\u{2666}": return Suit.diamonds
+            case "\u{2665}": return Suit.hearts
+            case "\u{2660}": return Suit.spades
             default:
-                switch self.lowercaseString {
-                    case "c", "clubs":      return Suit.Clubs
-                    case "d", "diamonds":   return Suit.Diamonds
-                    case "h", "hearts":     return Suit.Hearts
-                    case "s", "spades":     return Suit.Spades
+                switch self.lowercased() {
+                    case "c", "clubs":      return Suit.clubs
+                    case "d", "diamonds":   return Suit.diamonds
+                    case "h", "hearts":     return Suit.hearts
+                    case "s", "spades":     return Suit.spades
                     case "nt", "no trump",
-                         "none", "notrump": return Suit.NoTrump
+                         "none", "notrump": return Suit.noTrump
                     default:                return nil
                 }
         }

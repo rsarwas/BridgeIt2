@@ -9,14 +9,14 @@
 import Foundation
 
 enum CallType: CustomStringConvertible {
-    case Pass, Bid, Double, Redouble
+    case pass, bid, double, redouble
     
     var description: String {
         switch self {
-            case Pass :    return "Pass";
-            case Bid :     return "Bid";
-            case Double:   return "Double";
-            case Redouble: return "Redouble";
+            case .pass :    return "Pass";
+            case .bid :     return "Bid";
+            case .double:   return "Double";
+            case .redouble: return "Redouble";
         }
     }
 }
@@ -27,7 +27,7 @@ struct Call: CustomStringConvertible {
     let bid: Bid?;
     
     init(bidder:Seat, callType:CallType, bid: Bid?) {
-        assert(callType == CallType.Bid && bid == nil, "No bid provided with your bid call");
+        assert(callType == CallType.bid && bid == nil, "No bid provided with your bid call");
         self.bidder = bidder;
         self.callType = callType;
         self.bid = bid;
@@ -35,8 +35,8 @@ struct Call: CustomStringConvertible {
     
     var description: String {
         switch self.callType {
-            case .Bid : return "\(bidder) Bids \(bid)";
-            case .Pass : return "\(bidder) Passes";
+            case .bid : return "\(bidder) Bids \(bid)";
+            case .pass : return "\(bidder) Passes";
             default: return  "\(bidder) \(callType)s";
         }
     }

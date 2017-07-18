@@ -33,7 +33,7 @@ class GameViewController: NSViewController {
         // create and configure a material
         let material = SCNMaterial()
         material.diffuse.contents = NSImage(named: "texture")
-        material.specular.contents = NSColor.whiteColor()
+        material.specular.contents = NSColor.white
         material.specular.intensity = 0.2
         material.locksAmbientWithDiffuse = true
         
@@ -42,7 +42,7 @@ class GameViewController: NSViewController {
         
         // animate the 3d object
         let animation: CABasicAnimation = CABasicAnimation(keyPath: "rotation")
-        animation.toValue = NSValue(SCNVector4: SCNVector4(x: CGFloat(1), y:CGFloat(1), z:CGFloat(0), w:CGFloat(M_PI*2)))
+        animation.toValue = NSValue(scnVector4: SCNVector4(x: CGFloat(1), y:CGFloat(1), z:CGFloat(0), w:CGFloat(M_PI*2)))
         animation.duration = 5
         animation.repeatCount = MAXFLOAT //repeat forever
         boxNode.addAnimation(animation, forKey: "")
@@ -57,7 +57,7 @@ class GameViewController: NSViewController {
         self.gameView.showsStatistics = true
         
         // configure the view
-        self.gameView.backgroundColor = NSColor.blackColor()
+        self.gameView.backgroundColor = NSColor.black
     }
 
 }

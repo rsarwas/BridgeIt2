@@ -9,18 +9,18 @@
 import Foundation
 
 enum Rank:Int, Comparable, CustomStringConvertible {
-    case Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace
+    case two = 2, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace
     
     static func All() -> [Rank] {
-        return [Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace]
+        return [two, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace]
     }
     
     var description: String {
         switch self {
-            case Jack:  return "J";
-            case Queen: return "Q";
-            case King:  return "K";
-            case Ace:   return "A";
+            case .jack:  return "J";
+            case .queen: return "Q";
+            case .king:  return "K";
+            case .ace:   return "A";
             default:    return "\(self.rawValue)";
         }
     }
@@ -32,20 +32,20 @@ func < (left:Rank, right:Rank) -> Bool {
 
 extension String {
     var rankValue: Rank? {
-        switch self.lowercaseString {
-            case "a", "ace":   return Rank.Ace
-            case "k", "king":  return Rank.King
-            case "q", "queen": return Rank.Queen
-            case "j", "jack":  return Rank.Jack
-            case "10":         return Rank.Ten
-            case "9":          return Rank.Nine
-            case "8":          return Rank.Eight
-            case "7":          return Rank.Seven
-            case "6":          return Rank.Six
-            case "5":          return Rank.Five
-            case "4":          return Rank.Four
-            case "3":          return Rank.Three
-            case "2":          return Rank.Two
+        switch self.lowercased() {
+            case "a", "ace":   return Rank.ace
+            case "k", "king":  return Rank.king
+            case "q", "queen": return Rank.queen
+            case "j", "jack":  return Rank.jack
+            case "10":         return Rank.ten
+            case "9":          return Rank.nine
+            case "8":          return Rank.eight
+            case "7":          return Rank.seven
+            case "6":          return Rank.six
+            case "5":          return Rank.five
+            case "4":          return Rank.four
+            case "3":          return Rank.three
+            case "2":          return Rank.two
             default:           return nil
         }
     }

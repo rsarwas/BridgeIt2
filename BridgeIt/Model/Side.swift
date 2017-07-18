@@ -9,15 +9,15 @@
 import Foundation
 
 enum Side {
-    case NorthSouth, EastWest
+    case northSouth, eastWest
     
     var otherSide: Side
     {
     switch self {
-    case .EastWest:
-        return Side.NorthSouth
-    case .NorthSouth:
-        return Side.EastWest
+    case .eastWest:
+        return Side.northSouth
+    case .northSouth:
+        return Side.eastWest
         }
     }
 

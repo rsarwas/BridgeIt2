@@ -41,7 +41,7 @@ extension String {
     var bidValue: Bid? {
         if let tricks = Int(String(self[self.startIndex])) {
             if 0 < tricks && tricks <= 7 {
-                if let suit = self.substringFromIndex(self.startIndex.successor()).suitValue {
+                if let suit = self.substring(from: self.characters.index(after: self.startIndex)).suitValue {
                     return Bid(tricks: tricks, suit: suit)
                 }
             }

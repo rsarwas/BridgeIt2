@@ -8,17 +8,17 @@
 
 enum TableState {
 case
-    WaitingForPlayers,
-    DrawingForFirstDealer,
-    ShufflingTheDeck,
-    CuttingTheDeck,
-    DealingTheDeck,
-    WaitingForCall,
-    AssessingCall,
-    ChangingACall,  //FIXME - not implemented
-    ClosingAuction,
-    WaitingForCardPlay,
-    AssessingCardPlay,
-    RetractingACard,  //FIXME - not implemented
-    ClosingTrick
+    waitingForPlayers,
+    drawingForFirstDealer,
+    shufflingTheDeck,
+    cuttingTheDeck,
+    dealingTheDeck,
+    waitingForCall,
+    assessingCall,
+    changingACall,  //FIXME - not implemented
+    closingAuction,
+    waitingForCardPlay,
+    assessingCardPlay,
+    retractingACard,  //FIXME - not implemented
+    closingTrick
 }

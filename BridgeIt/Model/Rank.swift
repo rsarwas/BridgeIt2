@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Rank:Int, Comparable, Printable {
+enum Rank:Int, Comparable, CustomStringConvertible {
     case Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace
     
     static func All() -> [Rank] {

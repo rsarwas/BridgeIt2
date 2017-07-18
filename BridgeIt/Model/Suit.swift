@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Suit:Int, Comparable, Printable {
+enum Suit:Int, Comparable, CustomStringConvertible {
     case Clubs = 1, Diamonds, Hearts, Spades, NoTrump
     
     static func All() -> [Suit] {

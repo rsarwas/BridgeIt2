@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Contract: Equatable, Comparable, Printable {
+struct Contract: Equatable, Comparable, CustomStringConvertible {
     let doubles:Int;
     let bid:Bid;
     

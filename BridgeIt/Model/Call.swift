@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum CallType: Printable {
+enum CallType: CustomStringConvertible {
     case Pass, Bid, Double, Redouble
     
     var description: String {
@@ -21,7 +21,7 @@ enum CallType: Printable {
     }
 }
 
-struct Call: Printable {
+struct Call: CustomStringConvertible {
     let bidder: Seat;
     let callType: CallType;
     let bid: Bid?;

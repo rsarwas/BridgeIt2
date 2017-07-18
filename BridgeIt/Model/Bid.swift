@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Bid: Equatable, Comparable, Printable {
+struct Bid: Equatable, Comparable, CustomStringConvertible {
     let tricks:Int;
     let suit:Suit;
     
@@ -39,7 +39,7 @@ func < (left:Bid, right:Bid) -> Bool {
 
 extension String {
     var bidValue: Bid? {
-        if let tricks = String(self[self.startIndex]).toInt() {
+        if let tricks = Int(String(self[self.startIndex])) {
             if 0 < tricks && tricks <= 7 {
                 if let suit = self.substringFromIndex(self.startIndex.successor()).suitValue {
                     return Bid(tricks: tricks, suit: suit)

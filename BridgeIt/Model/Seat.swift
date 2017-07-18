@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Seat: Int, Equatable, Comparable, Printable {
+enum Seat: Int, Equatable, Comparable, CustomStringConvertible {
     case West = 1, North, East, South
 
     static func All() -> [Seat] {

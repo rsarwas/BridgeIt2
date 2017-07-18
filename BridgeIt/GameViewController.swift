@@ -42,7 +42,7 @@ class GameViewController: NSViewController {
         
         // animate the 3d object
         let animation: CABasicAnimation = CABasicAnimation(keyPath: "rotation")
-        animation.toValue = NSValue(scnVector4: SCNVector4(x: CGFloat(1), y:CGFloat(1), z:CGFloat(0), w:CGFloat(M_PI*2)))
+        animation.toValue = NSValue(scnVector4: SCNVector4(x: CGFloat(1), y:CGFloat(1), z:CGFloat(0), w:CGFloat(Double.pi*2)))
         animation.duration = 5
         animation.repeatCount = MAXFLOAT //repeat forever
         boxNode.addAnimation(animation, forKey: "")

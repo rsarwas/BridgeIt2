@@ -35,7 +35,7 @@ struct Call: CustomStringConvertible {
     
     var description: String {
         switch self.callType {
-            case .bid : return "\(bidder) Bids \(bid)";
+            case .bid : return "\(bidder) Bids \(String(describing: bid))";
             case .pass : return "\(bidder) Passes";
             default: return  "\(bidder) \(callType)s";
         }

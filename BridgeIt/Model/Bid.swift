@@ -36,12 +36,14 @@ func < (left:Bid, right:Bid) -> Bool {
     }
 }
 
-
+//TODO: make .bidValue an extension on substring as well as string
 extension String {
     var bidValue: Bid? {
         if let tricks = Int(String(self[self.startIndex])) {
             if 0 < tricks && tricks <= 7 {
-                if let suit = self.substring(from: self.characters.index(after: self.startIndex)).suitValue {
+                let suitIndex = self.index(self.startIndex, offsetBy: 1)
+                //TODO: make .suitValue an extension on substring as well as string
+                if let suit = String(self[suitIndex...]).suitValue {
                     return Bid(tricks: tricks, suit: suit)
                 }
             }

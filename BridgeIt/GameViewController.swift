@@ -32,7 +32,7 @@ class GameViewController: NSViewController {
         
         // create and configure a material
         let material = SCNMaterial()
-        material.diffuse.contents = NSImage(named: NSImage.Name(rawValue: "texture"))
+        material.diffuse.contents = NSImage(named: "texture")
         material.specular.contents = NSColor.white
         material.specular.intensity = 0.2
         material.locksAmbientWithDiffuse = true

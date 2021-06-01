@@ -6,68 +6,52 @@
 //  Copyright (c) 2014 Regan Sarwas. All rights reserved.
 //
 
-import Foundation
+enum Seat: CaseIterable, Equatable, Comparable {
+  case west, north, east, south
+}
 
-enum Seat: Int, Equatable, Comparable, CustomStringConvertible {
-    case west = 1, north, east, south
-
-    static func All() -> [Seat] {
-        return [west, north, east, south]
-    }
-    
-    var rightHandOpponent: Seat
-    {
-        var seat = self.rawValue - 1;
-        if seat < 1 {
-            seat = 4
-        }
-        return Seat(rawValue: seat)!
-    }
-    
-    var leftHandOpponent: Seat
-    {
-    var seat = self.rawValue + 1;
-        if 4 < seat {
-            seat = 1
-        }
-        return Seat(rawValue: seat)!
-    }
-    
-    var nextSeat: Seat
-    {
-        return self.leftHandOpponent
-    }
-    
-    var side: Side
-    {
+extension Seat {
+  var rightHandOpponent: Seat {
     switch self {
-    case .east, .west:
-        return Side.eastWest
-    case .north, .south:
-        return Side.northSouth
-        }
+    case .west: return .north
+    case .north: return .east
+    case .east: return .south
+    case .south: return .west
     }
-    
-    var otherSide: Side
-    {
+  }
+
+  var leftHandOpponent: Seat {
+    switch self {
+    case .west: return .south
+    case .north: return .west
+    case .east: return .north
+    case .south: return .east
+    }
+  }
+
+  var nextSeat: Seat {
+    return self.leftHandOpponent
+  }
+
+  var side: Side {
+    switch self {
+    case .east, .west: return .eastWest
+    case .north, .south: return .northSouth
+    }
+  }
+
+  var otherSide: Side {
     return self.side.otherSide
-    }
-    
-    var description: String {
-        switch self {
-        case .east:
-            return "East"
-        case .west:
-            return "West"
-        case .south:
-            return "South"
-        case .north:
-            return "North"
-        }
-    }
+  }
 }
 
-func < (left:Seat, right:Seat) -> Bool {
-    return (left.rawValue < right.rawValue)
+extension Seat: CustomStringConvertible {
+  var description: String {
+    switch self {
+    case .east: return "East"
+    case .west: return "West"
+    case .south: return "South"
+    case .north: return "North"
+    }
+  }
 }
-

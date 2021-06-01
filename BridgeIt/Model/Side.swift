@@ -6,19 +6,14 @@
 //  Copyright (c) 2014 Regan Sarwas. All rights reserved.
 //
 
-import Foundation
-
 enum Side {
-    case northSouth, eastWest
-    
-    var otherSide: Side
-    {
+  case northSouth, eastWest
+
+  var otherSide: Side {
     switch self {
-    case .eastWest:
-        return Side.northSouth
-    case .northSouth:
-        return Side.eastWest
-        }
+    case .eastWest: return .northSouth
+    case .northSouth: return .eastWest
     }
+  }
 
 }

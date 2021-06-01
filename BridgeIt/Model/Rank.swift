@@ -1,52 +1,52 @@
 //
-//  Rank.swift
+//  .swift
 //  BridgeIt
 //
 //  Created by Regan Sarwas on 2014-07-17.
 //  Copyright (c) 2014 Regan Sarwas. All rights reserved.
 //
 
-import Foundation
-
-enum Rank:Int, Comparable, CustomStringConvertible {
-    case two = 2, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace
-    
-    static func All() -> [Rank] {
-        return [two, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace]
-    }
-    
-    var description: String {
-        switch self {
-            case .jack:  return "J";
-            case .queen: return "Q";
-            case .king:  return "K";
-            case .ace:   return "A";
-            default:    return "\(self.rawValue)";
-        }
-    }
+enum Rank: Int, CaseIterable {
+  case two = 2
+  case three, four, five, six, seven, eight, nine, ten
+  case jack, queen, king, ace
 }
 
-func < (left:Rank, right:Rank) -> Bool {
+extension Rank: CustomStringConvertible {
+  var description: String {
+    switch self {
+    case .jack: return "J"
+    case .queen: return "Q"
+    case .king: return "K"
+    case .ace: return "A"
+    default: return "\(self.rawValue)"
+    }
+  }
+}
+
+extension Rank: Comparable {
+  static func < (left: Rank, right: Rank) -> Bool {
     return (left.rawValue < right.rawValue)
+  }
 }
 
 extension String {
-    var rankValue: Rank? {
-        switch self.lowercased() {
-            case "a", "ace":   return Rank.ace
-            case "k", "king":  return Rank.king
-            case "q", "queen": return Rank.queen
-            case "j", "jack":  return Rank.jack
-            case "10":         return Rank.ten
-            case "9":          return Rank.nine
-            case "8":          return Rank.eight
-            case "7":          return Rank.seven
-            case "6":          return Rank.six
-            case "5":          return Rank.five
-            case "4":          return Rank.four
-            case "3":          return Rank.three
-            case "2":          return Rank.two
-            default:           return nil
-        }
+  var rankValue: Rank? {
+    switch self.lowercased() {
+    case "a", "ace": return .ace
+    case "k", "king": return .king
+    case "q", "queen": return .queen
+    case "j", "jack": return .jack
+    case "10": return .ten
+    case "9": return .nine
+    case "8": return .eight
+    case "7": return .seven
+    case "6": return .six
+    case "5": return .five
+    case "4": return .four
+    case "3": return .three
+    case "2": return .two
+    default: return nil
     }
+  }
 }
